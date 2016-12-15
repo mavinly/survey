@@ -1,0 +1,21 @@
+<div class='panel panel-primary'>
+    <div class='panel-heading'>
+        {{pageTitle}}
+    </div>
+    <div class='panel-body'>
+        <div class='table-responsive'>
+            <table class='table'>
+                <thead>
+                    <th>ID</th>
+                    <th>Unit</th>                    
+                </thead>
+                <tbody>
+                    <tr *ngFor='let eqp of equipment'>
+                        <td>{{ eqp.ID }}</td>
+                        <td>{{ eqp.Unit }}</td>
+                    </tr>                        
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
